@@ -1,3 +1,5 @@
+from __future__ import with_statement
+
 from pytest import raises
 
 from value import Value
@@ -58,4 +60,3 @@ def test_tuple_parameter_unpacking_is_not_allowed():
     Option = fixture(lambda self, (one, two): None)
     with raises(ValueError):
         Option()
-

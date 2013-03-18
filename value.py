@@ -1,6 +1,9 @@
 from inspect import getargspec
 
 
+__version__ = '0.1.0'
+
+
 class Value(object):
 
     def __new__(class_, *args, **kwargs):
